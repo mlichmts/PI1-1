@@ -1,0 +1,2 @@
+1.dokončit domceky
+2.vytvorit nový file 12-du.py,skopirovat kod z 11 du a upravit tak aby sa nam nase menocopakovalo tak ako domceky
