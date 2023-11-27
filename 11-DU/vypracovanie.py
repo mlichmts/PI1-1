@@ -4,7 +4,7 @@ canvas = tkinter.Canvas()
 canvas.pack()
 x = 25
 y = 50
-d = 25
+d = 5
 f ="red"
 
 
