@@ -6,7 +6,7 @@ canvas.pack()
 
 x = 5
 y = 5
-d = 50
+d = 35
 xx = 5
 stvrtina = d // 4
 vyskadomceka= d+2*stvrtina

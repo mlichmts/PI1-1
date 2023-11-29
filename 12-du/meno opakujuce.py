@@ -4,12 +4,12 @@ canvas = tkinter.Canvas(height=600,width=500)
 canvas.pack()
 x = 3
 y = 3
-d = 3
-sirkanapisu=d*45
-vyskanaoisu=d*7
+d = 6
+sirkanapisu=d*40
+vyskanaoisu=d*8
 xx=3
-pocet = 598//sirkanapisu  #dve // je celociselne delenie 7//3=2
-vyska = 498//vyskanaoisu
+pocet = 498//sirkanapisu  #dve // je celociselne delenie 7//3=2
+vyska = 598//vyskanaoisu
 
 for j in range(vyska):
     for i in range (pocet):
