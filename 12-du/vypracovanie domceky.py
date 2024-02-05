@@ -1,16 +1,16 @@
 import tkinter
 
-canvas = tkinter.Canvas(width=600, height=500)
+canvas = tkinter.Canvas(width=700, height=500)
 canvas.pack()
 
 
 x = 5
 y = 5
-d = 50
+d = 20
 xx = 5
 stvrtina = d // 4
 vyskadomceka= d+2*stvrtina
-pocet = 598//d  #dve // je celociselne delenie 7//3=2
+pocet = 698//d  #dve // je celociselne delenie 7//3=2
 vyska = 498//vyskadomceka
 
 for j in range(vyska):

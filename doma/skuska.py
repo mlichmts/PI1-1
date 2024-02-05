@@ -1,26 +1,39 @@
 import tkinter
-import random
 
-canvas = tkinter.Canvas()
+
+canvas = tkinter.Canvas(height=600, width=800)
 canvas.pack()
+pocet_riadkov = int(input("Zadaj počet riadkov: "))
+def farba (r, g, b):
+    return f"#{r:02x}{g:02x}{b:02x}"
 
-n = 7
-for i in range(n):
-    x = random.randint(10, 370)
-    y = random.randint(10, 240)
-    canvas.create_oval(x - 3, y - 3, x + 3, y + 3, fill='red')
-    if i == 0:
-        x1 = x2 = x
-        y1 = y2 = y
-    else:
-        if x < x1:
-            x1 = x
-        if x > x2:
-            x2 = x
-        if y < y1:
-            y1 = y
-        if y > y2:
-            y2 = y
-canvas.create_rectangle(x1, y1, x2, y2, outline='blue')
+def stvorce ( x, y, pocet, dlzka, r=255, g=255, b=255 ):
+    for j in range(pocet_riadkov):
+        y=y+dlzka
+        for i in range(pocet):
+            krok = 255//dlzka
+            canvas.create_rectangle(x, y, x+dlzka, y+dlzka, fill=farba(r,g,b))
+            x = x+dlzka
+            if r > krok:
+                 r -= krok
+            if g > krok:
+                 g -= krok
+            if b > krok:
+                 b -= krok
+            if x == 420:
+                x = 20
+            if r == 15:
+                r = 255
+            if r == 255:
+                r = 0
+                g = 255
+            if g == 15:
+                g = 0
+                b = 255
+            if b == 15:
+                b = 0
+                r = 255
+stvorce(20,20,20,20,255,0,0)
+
 
 tkinter.mainloop()

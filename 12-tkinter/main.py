@@ -3,7 +3,7 @@ import random
 
 canvas = tkinter.Canvas(width=600, height=500)
 canvas.pack()
-x = 0
+x = 3
 y = 0
 d = 100
 xx = 3
@@ -15,8 +15,8 @@ for j in range(vyska):
         canvas.create_rectangle(x, y, x+d, y+d, fill=farba)
         canvas.create_line(x, y, x+d, y+d)
         canvas.create_line(x, y+d, x+d, y)
-        x = x+d
-        x = xx
+        x =x+d
+    x = xx
     y = y + d
 
 
