@@ -21,5 +21,5 @@ def troj(rameno,uhol):
 
 
 
-troj(200,10)
+troj(300,20)
 t.mainloop()
